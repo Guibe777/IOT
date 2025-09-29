@@ -1,0 +1,100 @@
+Guilherme do Nascimento
+
+1)
+#include <stdio.h>
+#include <locale.h>
+int main()
+{
+	setlocale(LC_ALL, "Portuguese");
+	
+	// Variáveis
+	float sal, aum;
+	// Mensagem antes da leitura do salário
+	printf("Digite o salário de um funcionário: ");
+	// Recebe o salário
+	scanf("%f%*c", &sal);
+	
+	// Calculando o novo salário
+	aum = sal*1.25;
+	
+	// Exibindo os resultados
+	printf("O novo salário é de: R$ %0.2f%", aum);
+}
+
+
+2)
+#include <stdio.h>
+#include <locale.h>
+int main()
+{
+	setlocale(LC_ALL, "Portuguese");
+	// Variáveis
+	float sal, sal_final, grat, imp;
+	
+	// Mensagem pedindo o salário
+	printf("Blud digita o salario do funcionario: ");
+	scanf("%f%*c", &sal);
+	
+	// Cálculo da gratificação e imposto
+	grat = (sal * 0.05);
+	imp = (sal* 0.07);
+	// Salário a receber
+	sal_final = sal + grat - imp;
+	
+	// Mensagens com os resultados
+	printf("O valor da gratificacao e de R$ %0.2f%\n", grat);
+	printf("O valor do imposto e de R$ %0.2f%\n", imp);
+	printf("O salario a receber do funcionario e de: %0.2f%", sal_final);
+	
+}
+
+
+3)
+#include <stdio.h>
+#include <locale.h>
+int main()
+{
+	setlocale(LC_ALL, "Portuguese");
+	
+	// Variáveis
+	float dep, taxa, rend, tot;
+	
+	// Pedindo o valor do depósito
+	printf("Digite o valor do deposito: R$ ");
+	scanf("%f%*c", &dep);
+	// Pedindo a taxa de juros
+	printf("Digite a taxa de juros em porcentagem: ");
+	scanf("%f%*c", &taxa);
+	// Cálculo do rendimento
+	rend = dep * (taxa/100);
+	tot = dep + rend;
+	// Mostrando os valores
+	printf("Valor do rendimento R$ %0.2f%\n", rend);
+	printf("Valor total com o rendimento R$ %0.2f%\n", tot);
+}
+
+
+4)
+#include <stdio.h>
+#include <locale.h>
+int main()
+{
+	setlocale(LC_ALL, "Portuguese");
+    // Variáveis
+	float pes, jardas, milhas, polegadas;
+	
+	// Mensagem pedindo o valor em pés
+	printf("Digite quantos pes voce quer converter para Polegadas, Jardas e Milhas: ");
+	scanf("%f%*c", &pes);
+	
+	// Conversões
+	polegadas = pes * 12;
+	jardas = pes / 3;
+	milhas = jardas / 1760;
+	
+	// Mostrando os valores
+	printf("Pes %0.2f%: \n" ,pes);
+	printf("Polegadas %0.2f%: \n" ,polegadas);
+	printf("Jardas %0.2f%: \n" ,jardas);
+	printf("Milhas %0.2f%: \n" ,milhas);
+}
