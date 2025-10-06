@@ -7,10 +7,10 @@ int main()
 	setlocale(LC_ALL,"Portuguese");
 	
 	char carro[50];
-	float consumo[3], maior_consumo, menor_consumo;
+	float consumo[6], maior_consumo, menor_consumo;
 	int i;
 	
-	for(i = 0; i < 5; i++){
+	for(i = 1; i < 6; i++){
 		printf("Digite o modelo do %d carro : ", i);
         scanf("%s", &carro[i]);
         
@@ -20,7 +20,7 @@ int main()
     
     maior_consumo = menor_consumo = consumo[0];
 	
-	for(i = 1; i < 5; i++){
+	for(i = 1; i < 6; i++){
         if(consumo[i] > maior_consumo) {
             maior_consumo = consumo[i];
         }
@@ -30,8 +30,8 @@ int main()
         }    
     }
     
-    printf("Carro com menor consumo: %s consumo: %.2f \n", carro[i], menor_consumo);
-    printf("Carro com maior consumo: %s consumo: %.2f \n", carro[i], maior_consumo);
+    printf("Carro com menor consumo: %s consumo: %.2f \n", menor_consumo);
+    printf("Carro com maior consumo: %s consumo: %.2f \n", maior_consumo);
     
     return 0;
 }
