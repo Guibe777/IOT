@@ -24,4 +24,5 @@ int main()
 			printf(" [%d] ",matriz[i][j] * maior_numero);
 		}
 	}
+	return 0;
 }
